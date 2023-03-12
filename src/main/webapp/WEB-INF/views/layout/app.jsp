@@ -14,7 +14,7 @@
             <div id="header">
                 <div id="header_menu">
                     <h1>日報管理システム</h1>
-                </div>css
+                </div>
             </div>
             <div id="content">${param.content}</div>
             <div id="footer">by Taro Kirameki.</div>
