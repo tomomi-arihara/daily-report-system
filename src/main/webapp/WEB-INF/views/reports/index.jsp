@@ -25,11 +25,11 @@
                     <th class="report_action">操作</th>
                 </tr>
                 <c:forEach var="report" items="${reports}" varStatus="status">
-                    <frm:parseDate value="${report.reporDate}" pattern="yyyy-MM-dd" var="reportDay" type="date" />
+                    <fmt:parseDate value="${report.reportDate}" pattern="yyyy-MM-dd" var="reportDay" type="date" />
 
                     <tr class="row${status.count % 2}">
                         <td class="report_name"><c:out value="${report.employee.name}" /></td>
-                        <td class="report_date"><frm:formatDate value="${reportDay}" pattern="yyyy-MM-dd" type="date" /></td>
+                        <td class="report_date"><fmt:formatDate value="${reportDay}" pattern="yyyy-MM-dd" type="date" /></td>
                         <td class="report_title"><c:out value="${report.title}" /></td>
                         <td class="report_action"><c:out value="${report.employee.name}" /></td>
                         <td class="report_action"><a href="<c:url value='?action=${actRep}&command=${commShow}&id=${report.id}' />">詳細を見る</a></td>
