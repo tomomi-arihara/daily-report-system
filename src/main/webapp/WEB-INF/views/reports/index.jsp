@@ -31,7 +31,6 @@
                         <td class="report_name"><c:out value="${report.employee.name}" /></td>
                         <td class="report_date"><fmt:formatDate value="${reportDay}" pattern="yyyy-MM-dd" type="date" /></td>
                         <td class="report_title"><c:out value="${report.title}" /></td>
-                        <td class="report_action"><c:out value="${report.employee.name}" /></td>
                         <td class="report_action"><a href="<c:url value='?action=${actRep}&command=${commShow}&id=${report.id}' />">詳細を見る</a></td>
                     </tr>
                 </c:forEach>
